@@ -1,0 +1,43 @@
+@import '_colors.scss';
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: $primary-black;
+    color: $primary-text;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+}
+
+ul{li{list-style: none;}}
+
+a{
+    color: $primary-text;
+    text-decoration: none;
+}
+
+@mixin button ($width, $height, $fontSize, $fontWeight){
+    background-color: $gray;
+    color: $primary-text;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(15% 0, 100% 0, 100% 60%, 85% 100%, 0 100%, 0 40%);
+
+    width: $width;
+    height: $height;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+
+    transition: 0.3s ease;
+
+    &:hover{
+        transform: translateY(-10px);
+    }
+}

@@ -1,0 +1,443 @@
+@import '_main.scss';
+
+body{
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 10vh;
+        padding: 0 5%;
+
+        border-bottom: 1px solid #FFF;
+
+        #btn-mobile{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+
+            display: none;
+            .lines{
+                width: 25px;
+                height: 2px;
+                border-radius: 1px;
+                background-color: #FFF;
+            }
+        }
+
+        .logo{
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+
+            .icon{width: 30px;}
+            .logomarca{width: 125px;}
+        }
+
+        #menu{
+            display: flex;
+            gap: 50px;
+            background-color: $primary-black;
+
+            z-index: 99;
+
+            ul{
+                display: flex;
+                gap: 15px;
+            }
+
+            .icons{
+                a{
+                    display: flex;
+                    gap: 5px;
+                    p{display: none;}
+                }
+                img{width: 25px;}
+                
+            }
+        }
+    }
+
+    .wrapper{
+        height: 80vh;
+
+        .slide-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+            width: 100%;
+            overflow: hidden;
+
+            .slide-nav-button{
+                position: absolute;
+                z-index: 1;
+            
+                background-color: transparent;
+                color: #fff;
+                font-size: 36px;
+            
+                cursor: pointer;
+            }
+            
+            .slide-nav-previous{
+                left: 20px;
+            }
+            
+            .slide-nav-next{
+                right: 20px;
+            }
+
+            .slide-list{
+                display: flex;
+
+                .slide-item{
+                    flex-shrink: 0;
+                    padding: 0;
+                    width: 97vw;
+                    height: 80vh;
+                
+                    cursor: grab;
+
+                    .slide-content{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 100%;
+                        height: 100%;
+
+                        .slide-description{
+                            color: #fff;
+                            width: 65%;
+                            
+                            h3{
+                                font-family: 'Iceland', sans-serif;
+                                font-size: 64px;
+                            }
+
+                            p{font-family: 'Poppins', sans-serif;}
+
+                            button{margin-top: 15px; @include button(150px, 40px, 0.9rem, 500);}
+                        }
+
+                        .slide-image{width: 20%;}
+                       
+                    }
+                }
+            }
+
+            .slide-controls{
+                margin: -30px auto 0;
+
+                .slide-control-button{
+                    background-color: transparent;
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 18px;
+                    margin: 0 3px;
+                    cursor: pointer;
+                }
+
+                .slide-control-button.active{
+                    color: #fff;
+                }
+            }
+            
+        }
+    }    
+
+    .cards{
+        display: flex;
+        width: 100%;
+
+        &:nth-child(2){
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .mask{
+            width: 50%;
+
+            mask-image: url(../../access/img/corte1.svg);
+            mask-repeat: no-repeat;
+            mask-size: 100%;
+            mask-position: center;
+
+            &:nth-child(2){mask-image: url(../../access/img/corte2.svg);}
+        }
+
+
+        .boxtext{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: right;
+            gap: 25px;
+            
+            padding: 0% 3%;
+
+            .titles{
+                img{width: 80%;}
+                h2{font-size: 0.9rem; font-weight: 400;}
+            }
+
+            button{@include button(150px, 40px, 0.9rem, 500);}
+        }        
+    }
+
+    .social-media{
+        width: 90%;
+        margin: 5% auto;
+
+        .title{width: 35%;}
+
+        a{
+            p{
+                margin: 5vh 0;
+                text-align: center;
+                color: #5A5A5A;
+            }
+        }
+
+        .grid{
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            margin-top: 5vh;
+
+            .card{
+                width: 25vw;
+                background-color: $secunday-black;
+                border-radius: 5px;
+
+                header{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap : 5px;
+
+                    font-size: 0.8rem;
+                    border: none;
+
+                    img{width: 10%;}
+                    .eclipse{width: 1.5%;}
+                    .follow{color: #007FD7;}
+
+                }
+
+                img{width: 100%;}
+
+                .footer{
+                    display: flex;
+                    height: 7vh;
+
+                    justify-content: center;
+                    align-items: center;
+
+                    button{@include button(100px, 25px, 0.7rem, 400);}
+                }
+            }
+        }
+    }
+
+    footer{
+        background-color: $secunday-black;
+        padding: 8%;
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .icon{width: 50px;}
+            .marca{width: 200px;}
+        }
+
+        section{
+            display: flex;
+            gap: 50px;
+
+            margin: 10% 0;
+            justify-content: center;
+
+            .box-links{
+
+                &:last-child{.links{flex-direction: row;}}
+
+                h1{
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                }
+                
+                .links{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 10px;
+
+                    a{color: $secundary-text;}
+
+                    img{width: 60%;}
+                }
+            }
+
+        }
+
+        p{
+            color: $secundary-text;
+            font-size: 1rem;
+            text-align: center;
+
+            margin-bottom: -4.5%;
+        }
+    }
+}
+
+/*RESPONSIVIDADE - brackpoints*/
+
+@media (max-width: 768px){
+    body{
+        header{
+            #btn-mobile{
+                display: flex;
+
+                .lines{transition: .3s ease;}
+                .lines:nth-child(2){transition: none;}
+            }
+
+            #menu{
+                position: fixed;
+                top: 11vh;
+                right: -81%;
+                width: 80%;
+                height: 90vh;
+                padding: 5% 0;
+
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                transition: .3s ease;
+                ul{
+                    flex-direction: column;
+                    gap: 25px;
+                }
+
+                .icons{
+                    flex-direction: row;
+                    a{p{display: flex;}}
+                }
+            }
+        }
+
+        .active{
+            #menu{
+                right: 0;
+            }
+
+            #btn-mobile{
+                position: relative;
+                .lines{position: absolute;}
+
+                .line1{transform: rotate(-135deg); top: 50%;}
+                .line2{visibility: hidden;}
+                .line3{transform: rotate(135deg); top: 50%}
+            }
+        }
+
+        .wrapper{
+            height: 100vh;
+            .slide-wrapper{
+                .slide-list{
+                    .slide-item{
+                        height: 100vh;
+    
+                        .slide-content{
+                            flex-direction: column-reverse;
+                            
+                            .slide-description{
+                                width: auto;
+                                text-align: center;
+    
+                                h3{font-size: 36px;}
+                                //p{display: none;}
+                            }
+                        }
+    
+                        .slide-image{width: 80vw;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    body{
+        header{
+            .logo{.logomarca{display: none;}}
+            #menu{width: 100%; right: -100%;}
+    }
+
+    .wrapper{
+        .slide-wrapper{
+            .slide-list{
+                .slide-item{
+                    .slide-content{
+                        .slide-description{
+                            p{display: none;}
+                        }
+                        .slide-image{width: 50%; margin-top: 50px;}
+                    }
+                }
+            }
+        }
+    }
+
+    .social-media{
+        .grid{ gap: 100px;
+            .card{
+                width: 100%;
+                padding: 15px 0;
+            }
+        }
+    }
+
+    .cards{
+        background-image: url('../img/card1.png');
+        background-position: center;
+        background-size: 180%;
+        width: 95vw;
+        height: 95vw;
+        margin: 5% auto;
+        border-radius: 3px;
+
+        &:nth-child(4){background-image: url('../img/card2.png');}
+        &:nth-child(5){background-image: url('../img/card3.png');}
+
+        .boxtext{
+            align-items: center;
+            text-align: center;
+        }
+
+        .mask{display: none;}
+    }
+    }
+
+    footer{
+        .logo{
+            justify-content: center;
+        }
+
+        section{
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

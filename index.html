@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharkoon</title>
+    <link rel="stylesheet" href="access/css/index.css">
+    <link rel="shortcut icon" href="access/img/icons/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <img class="icon" src="access/img/logo.svg">
+            <img class="logomarca" src="access/img/logomarca.svg">
+        </div>
+
+        <div id="btn-mobile">
+            <div class="lines line1"></div>
+            <div class="lines line2"></div>
+            <div class="lines line3"></div>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Periféricos</a></li>
+                <li><a href="#">Vestuário</a></li>
+            </ul>
+
+            <ul class="icons">
+                <li><a href="#"><img src="access/img/icons/support.svg"><p>Suporte</p></a></li>
+                <li><a href="#"><img src="access/img/icons/address.svg"><p>Contatos</p></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper" data-slide="wrapper">
+        <div class="slide-wrapper">
+
+            <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
+            <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+
+            <div class="slide-list" data-slide="list">
+                
+                <div class="slide-item" data-slide="item" data-index="0">
+                    <div class="slide-content">
+                        <div class="slide-description">
+                            <h3>REV 300</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lectus risus. Quisque id ligula ante. Mauris ac mi consectetur, sagittis sem at, accumsan lacus. Nam vel tristique sapien. Quisque elementum odio sed lacus congue elementum.</p>
+                            <button>Ver mais</button>
+                        </div>
+                        <img class="slide-image"  src="access/img/products/carousel/01.png">
+                    </div>
+                </div>
+
+                <div class="slide-item" data-slide="item" data-index="1">
+                    <div class="slide-content">
+                        <div class="slide-description">
+                            <h3>SKILLER SGS4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lectus risus. Quisque id ligula ante. Mauris ac mi consectetur, sagittis sem at, accumsan lacus. Nam vel tristique sapien. Quisque elementum odio sed lacus congue elementum.</p>
+                            <button>Ver mais</button>
+                        </div>
+                        <img class="slide-image"  src="access/img/products/carousel/02.png">
+                    </div>
+                </div>
+
+                <div class="slide-item" data-slide="item" data-index="2">
+                    <div class="slide-content">
+                        <div class="slide-description">
+                            <h3>SKILLER SGK3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lectus risus. Quisque id ligula ante. Mauris ac mi consectetur, sagittis sem at, accumsan lacus. Nam vel tristique sapien. Quisque elementum odio sed lacus congue elementum.</p>
+                            <button>Ver mais</button>
+                        </div>
+                        <img class="slide-image"  src="access/img/products/carousel/03.png">
+                    </div>
+                </div>
+
+                <div class="slide-item" data-slide="item" data-index="3">
+                    <div class="slide-content">
+                        <div class="slide-description">
+                            <h3>SKILLER SGH50</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lectus risus. Quisque id ligula ante. Mauris ac mi consectetur, sagittis sem at, accumsan lacus. Nam vel tristique sapien. Quisque elementum odio sed lacus congue elementum.</p>
+                            <button>Ver mais</button>
+                        </div>
+                        <img class="slide-image"  src="access/img/products/carousel/04.png">
+                    </div>
+                </div>
+
+                <div class="slide-item" data-slide="item" data-index="0">
+                    <div class="slide-content">
+                        <div class="slide-description">
+                            <h3>SKILLER SGD20</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lectus risus. Quisque id ligula ante. Mauris ac mi consectetur, sagittis sem at, accumsan lacus. Nam vel tristique sapien. Quisque elementum odio sed lacus congue elementum.</p>
+                            <button>Ver mais</button>
+                        </div>
+                        <img class="slide-image"  src="access/img/products/carousel/05.png">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="slide-controls"  data-slide="controls-wrapper">
+                <!--    <button class="slide-control-button fal fa-window-minimize" data-slide="control-button"></button> -->
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="access/js/slides-corrigido.js"></script>
+
+    <script>
+        initSlider({
+            autoPlay: true,
+            startIndex: 0,
+            timeInterval: 5000
+        })
+    </script> 
+
+    <section class="cards">
+        <img class="mask" src="access/img/card1.png">
+        <div class="boxtext">
+            <div class="titles">
+                <img class="title" src="access/img/tittles/moreconfort.svg">
+                <h2>DURANTE A JOGATINA</h2>
+            </div>
+            <button>Ver mais</button>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="boxtext">
+            <div class="titles">
+                <img class="title" src="access/img/tittles/moreSpace.svg">
+                <h2>PARA OS SEU HARDWARE</h2>
+            </div>
+            <button>Ver mais</button>
+        </div>
+        <img class="mask" src="access/img/card2.png">
+    </section>
+
+    <section class="cards">
+        <img class="mask" src="access/img/card3.png">
+        <div class="boxtext">
+            <div class="titles">
+                <img class="title" src="access/img/tittles/peripherals.svg">
+                <h2>PARA CADA TIPO DE PLAYER</h2>
+            </div>
+            <button>Ver mais</button>
+        </div>
+    </section>
+
+    <section class="social-media">
+        <img src="access/img/tittles/socialMedia.svg" class="title">
+
+        <div class="grid">
+            <div class="card">
+                <header>
+                    <img src="access/img/logo.svg" alt="">
+                    <a href="https://www.instagram.com/sharkoonbrasil/">shakoonbrasil</a>
+                    <img class="eclipse" src="access/img/Ellipse.svg" alt="">
+                    <p class="follow">Seguir</p>
+                </header>
+                <img src="access/img/socialmedia/01.png" alt="">
+                <div class="footer">
+                    <button>Ver Mais</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <header>
+                    <img src="access/img/logo.svg" alt="">
+                    <a href="https://www.instagram.com/sharkoonbrasil/">shakoonbrasil</a>
+                    <img class="eclipse" src="access/img/Ellipse.svg" alt="">
+                    <p class="follow">Seguir</p>
+                </header>
+                <img src="access/img/socialmedia/02.png" alt="">
+                <div class="footer">
+                    <button>Ver Mais</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <header>
+                    <img src="access/img/logo.svg" alt="">
+                    <a href="https://www.instagram.com/sharkoonbrasil/">shakoonbrasil</a>
+                    <img class="eclipse" src="access/img/Ellipse.svg" alt="">
+                    <p class="follow">Seguir</p>
+                </header>
+                <img src="access/img/socialmedia/03.png" alt="">
+                <div class="footer">
+                    <button>Ver Mais</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <header>
+                    <img src="access/img/logo.svg" alt="">
+                    <a href="https://www.instagram.com/sharkoonbrasil/">shakoonbrasil</a>
+                    <img class="eclipse" src="access/img/Ellipse.svg" alt="">
+                    <p class="follow">Seguir</p>
+                </header>
+                <img src="access/img/socialmedia/04.png" alt="">
+                <div class="footer">
+                    <button>Ver Mais</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <header>
+                    <img src="access/img/logo.svg" alt="">
+                    <a href="https://www.instagram.com/sharkoonbrasil/">shakoonbrasil</a>
+                    <img class="eclipse" src="access/img/Ellipse.svg" alt="">
+                    <p class="follow">Seguir</p>
+                </header>
+                <img src="access/img/socialmedia/05.png" alt="">
+                <div class="footer">
+                    <button>Ver Mais</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <header>
+                    <img src="access/img/logo.svg" alt="">
+                    <a href="https://www.instagram.com/sharkoonbrasil/">shakoonbrasil</a>
+                    <img class="eclipse" src="access/img/Ellipse.svg" alt="">
+                    <p class="follow">Seguir</p>
+                </header>
+                <img src="access/img/socialmedia/06.png" alt="">
+                <div class="footer">
+                    <button>Ver Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://www.instagram.com/sharkoonbrasil/"><p>Ver mais publicações ></p></a>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <img class="icon" src="access/img/logo.svg" alt="logo">
+            <img class="marca" src="access/img/logomarca.svg" alt="logomarca">
+        </div>
+        <section>
+            <div class="box-links">
+                <h1>a Sharkoon </h1>
+                <div class="links">
+                    <a href="#">Quem Somos</a>
+                    <a href="#">Imprensa</a>
+                    <a href="#">Informações Legais</a>
+                </div>
+            </div>
+
+            <div class="box-links">
+                <h1>Condições </h1>
+                <div class="links">
+                    <a href="#">Politíca de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+
+            <div class="box-links">
+                <h1>redes sociais</h1>
+                <div class="links">
+                    <a href="#"><img src="access/img/icons/twitter.svg" alt=""></a>
+                    <a href="#"><img src="access/img/icons/Youtube.svg" alt=""></a>
+                    <a href="#"><img src="access/img/icons/Instagram.svg" alt=""></a>
+                    <a href="#"><img src="access/img/icons/Tiktok.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <p>© 2021 Sharkoon Technologies GmbH - Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="access/js/script.js"></script>
+    
+</body>
+</html>
