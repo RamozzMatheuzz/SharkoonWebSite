@@ -434,10 +434,10 @@ body footer p {
     margin: 5% auto;
     border-radius: 3px;
   }
-  body .cards:nth-child(4) {
+  body .cards:nth-child(6) {
     background-image: url("../img/card2.png");
   }
-  body .cards:nth-child(5) {
+  body .cards:nth-child(7) {
     background-image: url("../img/card3.png");
   }
   body .cards .boxtext {
